@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtPrefs"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:text="Data:"
+        android:layout_marginTop="20sp"
+        android:layout_below="@+id/editTextTextPersonName3"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/storeinformation"
+        android:layout_width="176dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="217dp"
+        android:text="Store Information" />
+
+    <Button
+        android:id="@+id/showinformation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="240dp"
+        android:layout_marginBottom="217dp"
+
+        android:text="Show Information" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_height="37dp"
+        android:layout_marginTop="20dp"
+        android:text="Enter Your Details" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="23dp"
+        android:ems="10"
+        android:hint="Enter Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextTextPersonName"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:hint="Email id"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextTextPersonName2"
+        android:layout_marginTop="27dp"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Mobile Number" />
+
+</RelativeLayout>

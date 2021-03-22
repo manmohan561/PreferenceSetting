@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#000000">
+
+    <PreferenceCategory
+        android:title="Enable Bluetooth">
+
+        <CheckBoxPreference
+            android:title="Bluetooth"
+            android:key="NIGHT"
+            android:textColor="@color/teal_200"
+            android:defaultValue="false"
+            android:summaryOn=" Bluetooth is Enabled"
+            android:summaryOff=" Bluetooth is Disabled"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Screen Orientation">
+
+        <ListPreference
+            android:title="Orientation"
+            android:key="ORIENTATION"
+            android:textColor="@color/teal_200"
+            android:entries="@array/item_name"
+            android:entryValues="@array/item_values"
+            android:defaultValue="false"
+            />
+
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="BRIGHTNESS">
+        <SeekBarPreference
+            android:id="@+id/brightness"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:key="BRIGHTNESS"
+            android:max="100"
+            android:defaultValue="0" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="VOLUME">
+        <SeekBarPreference
+            android:id="@+id/volume"
+            android:key="VOLUME"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:max="15"
+            android:progress="50" />
+    </PreferenceCategory>
+
+
+</PreferenceScreen>
